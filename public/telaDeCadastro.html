@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+
+            <div class="labelFloat">
+                <input type="text" id="nome" required>
+                <label id="labelNome" for="nome">Nome Completo:</label>
+            </div>
+
+            <div class="labelFloat">
+                <input type="text" id="usuario" required>
+                <label id="labelUsuario" for="usuario">Usuário:</label>
+            </div>
+
+            <div class="labelFloat">
+                <input type="text" id="telefone" required>
+                <label id="labelTelefone"  for="telefone">Telefone:</label>
+            </div>
+
+            <div class="labelFloat">
+                <input type="text" id="endereco" required>
+                <label id="labelEndereco"  for="endereco">Endereço:</label>
+            </div>
+
+            <div class="labelFloat">
+                <input type="password" id="senha" required>
+                <label id="labelSenha"  for="senha">Senha:</label>
+            </div>
+
+            <div class="labelFloat">
+                <input type="password" id="confirmarSenha" required>
+                <label id="labelConfirmarSenha" for="confirmarSenha">Confirmar Senha:</label>
+            </div>
+
+            <div id ="msgSucesso"></div>
+            
+            <div class="justifyCenter">
+                <button type="button" onclick="cadastrar(event)" >Cadastrar</button>
+            </div>
+
+            <p> Já possue uma conta?
+                <a href="http://localhost:5500/public/telaDeLogin.html">Faça login</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="scripts/cadastro.js"></script>
+
+</body>
+</html>

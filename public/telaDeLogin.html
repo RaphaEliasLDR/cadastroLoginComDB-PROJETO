@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/login.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Login</h1>
+
+            <div class="labelFloat">
+                <input type="text" id="usuario" required>
+                <label id="labelUsuario" 
+                 for="usuario">Usuário</label>
+            </div>
+
+            <div class="labelFloat">
+                <input type="password" id="senha" required>
+                <label id="labelSenha" for="senha">Senha</label>
+            </div>
+
+            <div id="msgError"></div>
+
+            <div class="justifyCenter">
+                <button type="button" onclick="entrar()">Entrar</button>
+            </div>
+            
+
+            <p>Não possue uma conta?
+                <a href="http://127.0.0.1:5500/public/telaDeCadastro.html">Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="scripts/login.js"></script>
+
+</body>
+</html>
